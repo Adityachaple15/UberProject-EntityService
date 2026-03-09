@@ -1,0 +1,81 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example",
+    "module": "demo",
+    "version": "0.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "demo-0.0.1-SNAPSHOT-plain.jar",
+          "url": "demo-0.0.1-SNAPSHOT-plain.jar",
+          "size": 10901,
+          "sha512": "e23dd446c88c0bc44e57f53c35060dcdd99be05605716de36a561406684c2f2502e529ccaa17487f91fe95648663dc7c8d3f50bef6c002021c65a18ca92187a2",
+          "sha256": "8ce7f66424b39079d14ae756a5fbed84f85da70df969495d25416ce40f6befcd",
+          "sha1": "061fb56bed065a13af0319bd5933281a970c3d9e",
+          "md5": "1764f3360308ef38baaf008a179bff91"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-flyway"
+        },
+        {
+          "group": "org.flywaydb",
+          "module": "flyway-mysql",
+          "version": {
+            "requires": "11.9.1"
+          }
+        },
+        {
+          "group": "com.mysql",
+          "module": "mysql-connector-j"
+        }
+      ],
+      "files": [
+        {
+          "name": "demo-0.0.1-SNAPSHOT-plain.jar",
+          "url": "demo-0.0.1-SNAPSHOT-plain.jar",
+          "size": 10901,
+          "sha512": "e23dd446c88c0bc44e57f53c35060dcdd99be05605716de36a561406684c2f2502e529ccaa17487f91fe95648663dc7c8d3f50bef6c002021c65a18ca92187a2",
+          "sha256": "8ce7f66424b39079d14ae756a5fbed84f85da70df969495d25416ce40f6befcd",
+          "sha1": "061fb56bed065a13af0319bd5933281a970c3d9e",
+          "md5": "1764f3360308ef38baaf008a179bff91"
+        }
+      ]
+    }
+  ]
+}
