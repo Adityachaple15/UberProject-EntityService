@@ -3,6 +3,7 @@ package com.example.UberEnitityService.models;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.security.cert.Extension;
 import java.util.Date;
 
 @Entity
@@ -29,4 +30,10 @@ public class Booking extends BaseModel{
 
     @ManyToOne
     private Passenger passenger;
+
+    @OneToOne
+    private ExactLocation startLocation;
+
+    @OneToOne
+    private ExactLocation endLocation;
 }
